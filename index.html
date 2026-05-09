@@ -4,9 +4,9 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 <title>Khatri Harun Yunus</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0f1923;--surface:#162330;--surface2:#1c2e3d;--border:#1e3a4a;
@@ -18,7 +18,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html,body{height:100%;overflow-x:hidden;}
 body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
-.dnav-icon,.empty .ei{font-family:'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif;}
+.dnav-icon,.ic-meta span,.badge,.ic-name,.ic-price,.dash-label,.dash-val,.empty .ei{font-family:'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif;}
 #load-cover{position:fixed;inset:0;background:#0f1923;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:999;}
 .logo-mark{width:48px;height:48px;background:transparent;border:2.5px solid var(--accent);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:800;font-size:15px;letter-spacing:1px;}
 .load-txt{color:var(--muted);font-size:13px;}
@@ -61,7 +61,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .dash-scroll::-webkit-scrollbar{display:none;}
 .dash-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;min-width:130px;flex-shrink:0;}
 .dash-label{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;}
-.dash-val{font-size:clamp(16px,4.5vw,22px);font-weight:700;line-height:1;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;letter-spacing:normal;}
+.dash-val{font-size:22px;font-weight:700;line-height:1;}
 .dash-val.blue{color:var(--accent);}
 .dash-val.green{color:var(--success);}
 .dash-val.red{color:var(--danger);}
@@ -89,7 +89,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .toolbar-row{display:flex;gap:8px;align-items:center;}
 .search-wrap{position:relative;flex:1;}
 .search-wrap input{width:100%;padding:9px 12px 9px 34px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;}
-.search-wrap input:focus{border-color:var(--accent);background:#fff;}
+.search-wrap input:focus{border-color:var(--accent);background:var(--surface2);}
 .s-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:14px;}
 .fsel{padding:9px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:12px;outline:none;cursor:pointer;-webkit-appearance:none;flex:1;}
 .empty{text-align:center;padding:48px 24px;color:var(--muted);}
@@ -108,9 +108,9 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .form-grid .full{grid-column:1/-1;}
 .sale-item-card{background:var(--surface2);border-radius:var(--radius-sm);padding:12px;margin-bottom:8px;display:flex;flex-direction:column;gap:8px;}
 .sale-item-top{display:flex;align-items:center;gap:8px;}
-.sale-item-top select{flex:1;padding:8px 10px;background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;-webkit-appearance:none;min-width:0;}
+.sale-item-top select{flex:1;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;-webkit-appearance:none;min-width:0;}
 .sale-item-btm{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-.sale-item-btm input{padding:8px 10px;background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;width:100%;}
+.sale-item-btm input{padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;width:100%;}
 .add-item-btn{width:100%;padding:10px;background:transparent;border:1.5px dashed var(--border);border-radius:var(--radius-sm);color:var(--muted);font-size:13px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;text-align:center;}
 .inv-summary{background:var(--accent-light);border:1.5px solid #3a2e00;border-radius:var(--radius-sm);padding:12px 14px;margin-top:12px;}
 .inv-row{display:flex;justify-content:space-between;font-size:13px;padding:2px 0;}
@@ -392,7 +392,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
           <label>Product *</label>
           <div style="position:relative;">
             <input type="text" id="f-dproduct" placeholder="🔍 Type to search product..." oninput="filterDamageProducts(this)" autocomplete="off" style="width:100%;padding:11px 14px;background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:14px;outline:none;"/>
-            <div id="damage-product-drop" style="display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div>
+            <div id="damage-product-drop" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div>
             <input type="hidden" id="f-dpid"/>
           </div>
         </div>
@@ -781,7 +781,7 @@ window.openEditSale=(id)=>{
     const rid='sir-'+saleItemRows;
     const card=document.createElement('div');
     card.className='sale-item-card';card.id=rid;
-    card.innerHTML=`<div class="sale-item-top"><div style="flex:1;position:relative;"><input type="text" placeholder="🔍 Type to search product..." oninput="filterSaleProducts(this,'${rid}')" autocomplete="off" value="${esc(item.productName||'')}" style="width:100%;padding:8px 10px;background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-sm);color:#111;font-family:'Inter',sans-serif;font-size:13px;outline:none;"/><div id="drop-${rid}" style="display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div><input type="hidden" id="pid-${rid}" value="${esc(item.productId||'')}"/></div><button onclick="document.getElementById('${rid}').remove();updateInvoiceSummary();" style="width:32px;height:32px;flex-shrink:0;background:var(--danger-light);border:none;border-radius:8px;color:var(--danger);cursor:pointer;">✕</button></div><div class="sale-item-btm"><input type="number" min="1" placeholder="Qty" oninput="updateInvoiceSummary()" value="${item.qty||''}"/><input type="number" min="0" step="0.01" placeholder="Price (₹)" oninput="updateInvoiceSummary()" value="${item.price||''}"/></div>`;
+    card.innerHTML=`<div class="sale-item-top"><div style="flex:1;position:relative;"><input type="text" placeholder="🔍 Type to search product..." oninput="filterSaleProducts(this,'${rid}')" autocomplete="off" value="${esc(item.productName||'')}" style="width:100%;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;"/><div id="drop-${rid}" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div><input type="hidden" id="pid-${rid}" value="${esc(item.productId||'')}"/></div><button onclick="document.getElementById('${rid}').remove();updateInvoiceSummary();" style="width:32px;height:32px;flex-shrink:0;background:var(--danger-light);border:none;border-radius:8px;color:var(--danger);cursor:pointer;">✕</button></div><div class="sale-item-btm"><input type="number" min="1" placeholder="Qty" oninput="updateInvoiceSummary()" value="${item.qty||''}"/><input type="number" min="0" step="0.01" placeholder="Price (₹)" oninput="updateInvoiceSummary()" value="${item.price||''}"/></div>`;
     document.getElementById('sale-items-list').appendChild(card);
   });
   updateInvoiceSummary();
@@ -799,8 +799,8 @@ window.addSaleItemRow=()=>{
     <div class="sale-item-top">
       <div style="flex:1;position:relative;">
         <input type="text" placeholder="🔍 Type to search product..." oninput="filterSaleProducts(this,'${rid}')" autocomplete="off"
-          style="width:100%;padding:8px 10px;background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-sm);color:#111;font-family:'Inter',sans-serif;font-size:13px;outline:none;"/>
-        <div id="drop-${rid}" style="display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div>
+          style="width:100%;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',sans-serif;font-size:13px;outline:none;"/>
+        <div id="drop-${rid}" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div>
         <input type="hidden" id="pid-${rid}"/>
       </div>
       <button onclick="document.getElementById('${rid}').remove();updateInvoiceSummary();" style="width:32px;height:32px;flex-shrink:0;background:var(--danger-light);border:none;border-radius:8px;color:var(--danger);cursor:pointer;">✕</button>
