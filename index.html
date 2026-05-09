@@ -4,6 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 <title>Khatri Harun Yunus</title>
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=inter:400,500,600,700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#0f1923;--surface:#162330;--surface2:#1c2e3d;--border:#1e3a4a;
@@ -14,7 +16,8 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html,body{height:100%;overflow-x:hidden;}
-body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em;}
+@supports (-webkit-touch-callout: none){body{letter-spacing:-0.04em;word-spacing:-0.05em;}}
 .dnav-icon,.ic-meta span,.badge,.ic-name,.ic-price,.dash-label,.dash-val,.empty .ei{font-family:'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif;}
 #load-cover{position:fixed;inset:0;background:#0f1923;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:999;}
 .logo-mark{width:48px;height:48px;background:transparent;border:2.5px solid var(--accent);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:800;font-size:15px;letter-spacing:1px;}
@@ -29,15 +32,15 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .lock-note{font-size:11px;color:var(--muted);text-align:center;margin-top:12px;}
 .field{margin-bottom:14px;}
 .field label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em;}
-.field input,.field select,.field textarea{width:100%;padding:11px 14px;background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:14px;outline:none;transition:border-color .15s;-webkit-appearance:none;}
+.field input,.field select,.field textarea{width:100%;padding:11px 14px;background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;outline:none;transition:border-color .15s;-webkit-appearance:none;}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);}
 .field textarea{resize:vertical;min-height:72px;}
 .field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;}
-.btn-primary{width:100%;padding:13px;background:var(--accent);color:#fff;font-family:inherit;font-weight:600;font-size:14px;border:none;border-radius:50px;cursor:pointer;}
-.btn-accent{padding:9px 20px;background:var(--accent);color:#fff;font-family:inherit;font-weight:600;font-size:13px;border:none;border-radius:50px;cursor:pointer;white-space:nowrap;flex-shrink:0;}
-.btn-cancel{flex:1;padding:11px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:inherit;font-weight:600;font-size:13px;border-radius:50px;cursor:pointer;}
-.btn-save{flex:2;padding:11px;background:var(--accent);color:#fff;font-family:inherit;font-weight:600;font-size:13px;border:none;border-radius:50px;cursor:pointer;}
-.btn-sm-outline{padding:6px 14px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:inherit;font-size:12px;font-weight:600;border-radius:50px;cursor:pointer;white-space:nowrap;}
+.btn-primary{width:100%;padding:13px;background:var(--accent);color:#fff;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:600;font-size:14px;border:none;border-radius:50px;cursor:pointer;}
+.btn-accent{padding:9px 20px;background:var(--accent);color:#fff;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:600;font-size:13px;border:none;border-radius:50px;cursor:pointer;white-space:nowrap;flex-shrink:0;}
+.btn-cancel{flex:1;padding:11px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:600;font-size:13px;border-radius:50px;cursor:pointer;}
+.btn-save{flex:2;padding:11px;background:var(--accent);color:#fff;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:600;font-size:13px;border:none;border-radius:50px;cursor:pointer;}
+.btn-sm-outline{padding:6px 14px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:12px;font-weight:600;border-radius:50px;cursor:pointer;white-space:nowrap;}
 #app-screen{display:none;flex-direction:column;min-height:100vh;max-width:480px;margin:0 auto;}
 header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
 .h-left{display:flex;align-items:center;gap:10px;}
@@ -46,7 +49,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .h-right{display:flex;align-items:center;gap:8px;}
 .live-pill{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--success);background:var(--success-light);padding:4px 10px;border-radius:20px;}
 .live-dot{width:6px;height:6px;border-radius:50%;background:var(--success);animation:pulse 1.5s infinite;}
-.drawer-btn{width:100%;display:flex;align-items:center;gap:14px;padding:14px 20px;border:none;background:transparent;color:var(--text);font-family:inherit;font-size:14px;font-weight:500;cursor:pointer;text-align:left;transition:background .15s;border-left:3px solid transparent;}
+.drawer-btn{width:100%;display:flex;align-items:center;gap:14px;padding:14px 20px;border:none;background:transparent;color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;font-weight:500;cursor:pointer;text-align:left;transition:background .15s;border-left:3px solid transparent;}
 .drawer-btn:hover{background:var(--surface2);}
 .drawer-btn.active{background:var(--accent-light);color:var(--accent);border-left-color:var(--accent);font-weight:700;}
 .dnav-icon{width:22px;height:22px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
@@ -85,10 +88,10 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .toolbar{padding:12px 16px;display:flex;flex-direction:column;gap:8px;background:var(--surface);border-bottom:1px solid var(--border);}
 .toolbar-row{display:flex;gap:8px;align-items:center;}
 .search-wrap{position:relative;flex:1;}
-.search-wrap input{width:100%;padding:9px 12px 9px 34px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:13px;outline:none;}
+.search-wrap input{width:100%;padding:9px 12px 9px 34px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;outline:none;}
 .search-wrap input:focus{border-color:var(--accent);background:var(--surface2);}
 .s-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:14px;}
-.fsel{padding:9px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:12px;outline:none;cursor:pointer;-webkit-appearance:none;flex:1;}
+.fsel{padding:9px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:12px;outline:none;cursor:pointer;-webkit-appearance:none;flex:1;}
 .empty{text-align:center;padding:48px 24px;color:var(--muted);}
 .empty .ei{font-size:36px;margin-bottom:10px;}
 .empty p{font-size:13px;}
@@ -105,10 +108,10 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .form-grid .full{grid-column:1/-1;}
 .sale-item-card{background:var(--surface2);border-radius:var(--radius-sm);padding:12px;margin-bottom:8px;display:flex;flex-direction:column;gap:8px;}
 .sale-item-top{display:flex;align-items:center;gap:8px;}
-.sale-item-top select{flex:1;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:13px;outline:none;-webkit-appearance:none;min-width:0;}
+.sale-item-top select{flex:1;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;outline:none;-webkit-appearance:none;min-width:0;}
 .sale-item-btm{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-.sale-item-btm input{padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:13px;outline:none;width:100%;}
-.add-item-btn{width:100%;padding:10px;background:transparent;border:1.5px dashed var(--border);border-radius:var(--radius-sm);color:var(--muted);font-size:13px;font-weight:600;font-family:inherit;cursor:pointer;text-align:center;}
+.sale-item-btm input{padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;outline:none;width:100%;}
+.add-item-btn{width:100%;padding:10px;background:transparent;border:1.5px dashed var(--border);border-radius:var(--radius-sm);color:var(--muted);font-size:13px;font-weight:600;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;cursor:pointer;text-align:center;}
 .inv-summary{background:var(--accent-light);border:1.5px solid #3a2e00;border-radius:var(--radius-sm);padding:12px 14px;margin-top:12px;}
 .inv-row{display:flex;justify-content:space-between;font-size:13px;padding:2px 0;}
 .inv-row span:first-child{color:var(--muted);}
@@ -132,10 +135,10 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
 .pc-stat{font-size:12px;}
 .pc-stat span{font-weight:700;color:var(--accent);}
 .sale-tabs{display:flex;gap:0;padding:0 16px;background:var(--surface);border-bottom:1px solid var(--border);}
-.sale-tab{flex:1;padding:11px 8px;border:none;background:transparent;color:var(--muted);font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;border-bottom:2.5px solid transparent;transition:all .15s;}
+.sale-tab{flex:1;padding:11px 8px;border:none;background:transparent;color:var(--muted);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;cursor:pointer;border-bottom:2.5px solid transparent;transition:all .15s;}
 .sale-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
 .sale-type-pills{display:flex;gap:8px;margin-bottom:14px;}
-.stype-pill{flex:1;padding:10px 6px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:inherit;font-size:13px;font-weight:600;border-radius:var(--radius-sm);cursor:pointer;text-align:center;transition:all .15s;}
+.stype-pill{flex:1;padding:10px 6px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;border-radius:var(--radius-sm);cursor:pointer;text-align:center;transition:all .15s;}
 .stype-pill.active{border-color:var(--accent);background:var(--accent-light);color:var(--accent);}
 .dash-breakdown{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 16px 12px;}
 .db-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;}
@@ -233,7 +236,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
     </div>
     <!-- Drawer Footer -->
     <div style="padding:16px 20px;border-top:1px solid var(--border);">
-      <button onclick="doLogout()" style="width:100%;padding:12px;background:var(--danger-light);border:1.5px solid var(--danger);border-radius:var(--radius-sm);color:var(--danger);font-family:inherit;font-weight:600;font-size:13px;cursor:pointer;text-align:left;display:flex;align-items:center;gap:10px;">
+      <button onclick="doLogout()" style="width:100%;padding:12px;background:var(--danger-light);border:1.5px solid var(--danger);border-radius:var(--radius-sm);color:var(--danger);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:600;font-size:13px;cursor:pointer;text-align:left;display:flex;align-items:center;gap:10px;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> <span>Lock &amp; Sign Out</span>
       </button>
     </div>
@@ -388,7 +391,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
         <div class="field full">
           <label>Product *</label>
           <div style="position:relative;">
-            <input type="text" id="f-dproduct" placeholder="🔍 Type to search product..." oninput="filterDamageProducts(this)" autocomplete="off" style="width:100%;padding:11px 14px;background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:14px;outline:none;"/>
+            <input type="text" id="f-dproduct" placeholder="🔍 Type to search product..." oninput="filterDamageProducts(this)" autocomplete="off" style="width:100%;padding:11px 14px;background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px;outline:none;"/>
             <div id="damage-product-drop" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div>
             <input type="hidden" id="f-dpid"/>
           </div>
@@ -417,8 +420,8 @@ header{display:flex;align-items:center;justify-content:space-between;padding:14p
         <div class="field full">
           <label>Product Photo</label>
           <div style="display:flex;gap:8px;margin-bottom:8px;">
-            <button type="button" onclick="document.getElementById('f-pphoto-cam').click()" style="flex:1;padding:10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:13px;cursor:pointer;">📷 Camera</button>
-            <button type="button" onclick="document.getElementById('f-pphoto-gal').click()" style="flex:1;padding:10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:13px;cursor:pointer;">🖼️ Gallery</button>
+            <button type="button" onclick="document.getElementById('f-pphoto-cam').click()" style="flex:1;padding:10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;cursor:pointer;">📷 Camera</button>
+            <button type="button" onclick="document.getElementById('f-pphoto-gal').click()" style="flex:1;padding:10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;cursor:pointer;">🖼️ Gallery</button>
           </div>
           <input type="file" id="f-pphoto-cam" accept="image/*" capture="environment" style="display:none;"/>
           <input type="file" id="f-pphoto-gal" accept="image/*" style="display:none;"/>
@@ -778,7 +781,7 @@ window.openEditSale=(id)=>{
     const rid='sir-'+saleItemRows;
     const card=document.createElement('div');
     card.className='sale-item-card';card.id=rid;
-    card.innerHTML=`<div class="sale-item-top"><div style="flex:1;position:relative;"><input type="text" placeholder="🔍 Type to search product..." oninput="filterSaleProducts(this,'${rid}')" autocomplete="off" value="${esc(item.productName||'')}" style="width:100%;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:13px;outline:none;"/><div id="drop-${rid}" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div><input type="hidden" id="pid-${rid}" value="${esc(item.productId||'')}"/></div><button onclick="document.getElementById('${rid}').remove();updateInvoiceSummary();" style="width:32px;height:32px;flex-shrink:0;background:var(--danger-light);border:none;border-radius:8px;color:var(--danger);cursor:pointer;">✕</button></div><div class="sale-item-btm"><input type="number" min="1" placeholder="Qty" oninput="updateInvoiceSummary()" value="${item.qty||''}"/><input type="number" min="0" step="0.01" placeholder="Price (₹)" oninput="updateInvoiceSummary()" value="${item.price||''}"/></div>`;
+    card.innerHTML=`<div class="sale-item-top"><div style="flex:1;position:relative;"><input type="text" placeholder="🔍 Type to search product..." oninput="filterSaleProducts(this,'${rid}')" autocomplete="off" value="${esc(item.productName||'')}" style="width:100%;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;outline:none;"/><div id="drop-${rid}" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div><input type="hidden" id="pid-${rid}" value="${esc(item.productId||'')}"/></div><button onclick="document.getElementById('${rid}').remove();updateInvoiceSummary();" style="width:32px;height:32px;flex-shrink:0;background:var(--danger-light);border:none;border-radius:8px;color:var(--danger);cursor:pointer;">✕</button></div><div class="sale-item-btm"><input type="number" min="1" placeholder="Qty" oninput="updateInvoiceSummary()" value="${item.qty||''}"/><input type="number" min="0" step="0.01" placeholder="Price (₹)" oninput="updateInvoiceSummary()" value="${item.price||''}"/></div>`;
     document.getElementById('sale-items-list').appendChild(card);
   });
   updateInvoiceSummary();
@@ -796,7 +799,7 @@ window.addSaleItemRow=()=>{
     <div class="sale-item-top">
       <div style="flex:1;position:relative;">
         <input type="text" placeholder="🔍 Type to search product..." oninput="filterSaleProducts(this,'${rid}')" autocomplete="off"
-          style="width:100%;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:inherit;font-size:13px;outline:none;"/>
+          style="width:100%;padding:8px 10px;background:var(--surface2);border:1.5px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;outline:none;"/>
         <div id="drop-${rid}" style="display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--radius-sm);z-index:999;max-height:200px;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,0.2);"></div>
         <input type="hidden" id="pid-${rid}"/>
       </div>
